@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Insight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1> Cookie Insight</h1>
+    <p class="subtitle">Understand what websites store in your browser</p>
+  </header>
+  <main>
+    <div class="summary-card">
+      <div id="site-info">Analyzing cookies for: <span id="current-site">...</span></div>
+      <div id="stats">
+        <div class="stat-box safe">
+          <span id="safe-count">0</span>
+          <span>Essential</span>
+        </div>
+        <div class="stat-box medium">
+          <span id="medium-count">0</span>
+          <span>Functional</span>
+        </div>
+        <div class="stat-box risky">
+          <span id="risky-count">0</span>
+          <span>Tracking</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="info-box">
+       This is a <strong>read-only</strong> tool. No cookies are modified.
+    </div>
+    
+    <div id="cookies-list"></div>
+    
+    <button id="refresh"> Rescan Page</button>
+  </main>
+  <script src="popup.js" defer></script>
+</body>
+</html>
